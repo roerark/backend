@@ -21,7 +21,7 @@ router.post("/login", verifyLogin, (req, res, next) => {
       const token = tokenBuilder(user);
       const user_id = user.user_id;
       res.json({
-        message: `Login successfull`,
+        message: `Login successful`,
         user_id,
         token,
       });
