@@ -17,7 +17,7 @@ function findByID(user_id) {
   return db("users as u")
     .leftJoin("locations as l", "u.location_id", "l.location_id")
     .select("u.user_id", "u.username", "l.location_name")
-    .where({ user_id })
+    .where( 'u.user_id', user_id )
     .first();
 }
 

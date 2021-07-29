@@ -18,7 +18,7 @@
     "rollbackh": "heroku run knex migrate:rollback -a african-marketplace-ft2",
     "databaseh": "heroku pg:psql -a african-marketplace-ft2",
     "seedh": "heroku run knex seed:run -a african-marketplace-ft2",
-    "deploy": "git push heroku main" 
+    "deploy": "git push heroku main"
   },
   "keywords": [],
   "author": "",
